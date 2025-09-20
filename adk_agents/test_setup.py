@@ -25,7 +25,7 @@ if not api_key:
 # Simple test agent
 test_agent = Agent(
     name="test_agent",
-    model="gemini-2.5-flash-lite",
+    model="gemini-2.0-flash",
     description="Test agent for ADK setup verification",
     instruction="You are a test agent. When asked about card info, use the get_card_info tool.",
     tools=[get_card_info]
@@ -48,7 +48,7 @@ async def test_agent_basic():
 
 if __name__ == "__main__":
     # Set minimal environment with a valid API key
-    os.environ['GOOGLE_API_KEY'] = 'AIzaSyAnj6KhxAsBLXD4YFU97CqZVqu0AfwhMYQ'
+    os.environ['GOOGLE_API_KEY'] = <your-key>
     
     print("🔧 Testing ADK Setup...")
     result = asyncio.run(test_agent_basic())
