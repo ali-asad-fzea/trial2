@@ -33,7 +33,7 @@ class AutonomousSystemDemo:
     def start_agent(self, script_name: str, port: int, agent_type: str):
         """Start an agent process."""
         env = os.environ.copy()
-        env['GOOGLE_API_KEY'] = 'AIzaSyAnj6KhxAsBLXD4YFU97CqZVqu0AfwhMYQ'
+        env['GOOGLE_API_KEY'] ='<Your-api-key>'
   # ADK agents need this even for basic functionality
         
         cmd = [sys.executable, script_name]
