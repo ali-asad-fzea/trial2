@@ -3,3 +3,6 @@ notebooks/cifar_net.pth
 .ipynb_checkpoints/
 .env
 __pycache__/
+*.pyc
+*.log
+*.tmp
